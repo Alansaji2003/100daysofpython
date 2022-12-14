@@ -5,3 +5,5 @@
 created a band name generator
 ### DAY 2
 created tip calculator
+### DAY 3
+made treasure game
