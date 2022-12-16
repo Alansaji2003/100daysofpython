@@ -7,3 +7,7 @@ created a band name generator
 created tip calculator
 ### DAY 3
 made treasure game
+### DAY 4
+made rock paper scissor game
+### day 5 
+made password generator
