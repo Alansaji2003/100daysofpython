@@ -1,9 +1,32 @@
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+while not at_goal():
+    i=0
+    while i<=4: #to count the infinite loop
+        
+        if right_is_clear():
+           
+            turn_right()
+            move()
+            i+=1
+        elif front_is_clear():
+            
+            move()
+            
+        else:
+            turn_left()
+            i=5
+  
+    if front_is_clear():
+        
+        move()    
+    else:
+        turn_left()
+                   
+        
+  
+              
+    
 
-print("Welcome to the tip calculator")
-total_bill=int(input("What was the total bill? Rs "))
-prc_tip=int(input("What percentage tip would you like to give? 10,12 or 15 "))
-people=int(input("How many people to split the bill "))
-result=round(((total_bill*prc_tip/100)+total_bill)/people,2)
-#to make the result have 2 decimal place no matter what
-result="{:.2f}".format(result)
-print(f"Each person should pay {result} Rs")
