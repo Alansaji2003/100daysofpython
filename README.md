@@ -11,3 +11,9 @@ made treasure game
 made rock paper scissor game
 ### day 5 
 made password generator
+### day 6
+completed the maze challenge in reeborg's world
+### day 7
+hangman game
+### day 8 
+made caesar cipher program
