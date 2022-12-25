@@ -19,3 +19,5 @@ hangman game
 made caesar cipher program
 ### day 9
 made blind auction
+### day 10
+made a basic calculator using recursion,dictionaries,functions
