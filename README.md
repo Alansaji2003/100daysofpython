@@ -1,5 +1,5 @@
 [![GitHub Streak](https://streak-stats.demolab.com/?user=Alansaji2003)](https://git.io/streak-stats)
-# 100daysofpython
+# 100daysofpython #MAKING 100 PYTHON PROJECTS!!
 ## LOG
 ### DAY 1
 created a band name generator
