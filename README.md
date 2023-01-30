@@ -24,5 +24,5 @@ made blind auction
 made a basic calculator using recursion,dictionaries,functions
 ### day 11
 made a Blackjack game in python
-### day 11
+### day 12
 made number guessing game
