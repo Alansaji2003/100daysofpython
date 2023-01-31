@@ -26,3 +26,7 @@ made a basic calculator using recursion,dictionaries,functions
 made a Blackjack game in python
 ### day 12
 made number guessing game
+### day 13
+learned about various debugging methods
+### day 14
+made the heigher lower game
