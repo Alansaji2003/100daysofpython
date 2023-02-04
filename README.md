@@ -30,3 +30,10 @@ made number guessing game
 learned about various debugging methods
 ### day 14
 made the heigher lower game
+### day 15
+made coffee machine
+### day 16
+learned about packages and how to use them, used turtle graphics, and made coffee machine through object oriented programing
+
+### day 17
+made quiz game with oop
