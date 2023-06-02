@@ -37,3 +37,11 @@ learned about packages and how to use them, used turtle graphics, and made coffe
 
 ### day 17
 made quiz game with oop
+### day 18
+working with turtle class
+### day 19
+turtle racing game
+### day 20
+sorting alogrithm visualiser
+### day 21
+snake game with python
