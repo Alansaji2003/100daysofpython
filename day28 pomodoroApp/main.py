@@ -16,7 +16,7 @@ timer = None
 
 # ---------------------------- APPEAR ON TOP------------------------------- #
 
-def raise_above_all(window):
+def raise_above_all():
     window.attributes('-topmost', 1)
     window.attributes('-topmost', 0)
 # ---------------------------- TIMER RESET ------------------------------- #
