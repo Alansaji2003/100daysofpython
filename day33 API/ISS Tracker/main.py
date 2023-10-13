@@ -3,6 +3,10 @@ import datetime as dt
 import smtplib
 import time
 
+from requests.structures import CaseInsensitiveDict
+
+
+
 my_email = "mailalantest@gmail.com"
 password = "avtmhpjaphjwghiv"
 MY_LAT = 12.9717248
@@ -16,7 +20,19 @@ def isOverHead():
 
     iss_longitude = float(data["iss_position"]["longitude"])
     iss_latitude = float(data["iss_position"]["latitude"])
-    print("The iss is at",iss_latitude,iss_longitude)
+    url = f"https://api.geoapify.com/v1/geocode/reverse?lat={iss_latitude}&lon={iss_longitude}&apiKey=f4266527e4144e478fcbe66cc5c0c528"
+
+    headers = CaseInsensitiveDict()
+    headers["Accept"] = "application/json"
+
+    resp = requests.get(url, headers=headers)
+    location_data = resp.json()
+    address = location_data["features"][0]["properties"]["formatted"]
+
+
+
+
+    print("The iss is at",iss_latitude,iss_longitude,",",address,"\n")
     # to check whether the Space station is near +/-5 degree to my location
     if MY_LAT - 5 <= iss_latitude <= MY_LAT + 5 and MY_LONG - 5 <= iss_longitude <= MY_LONG + 5:
         return True
@@ -41,7 +57,8 @@ def isNight():
 
 
 while True:
-    time.sleep(5)
+    print("loading...\n")
+    time.sleep(2)
     if isOverHead() and isNight():
         connection = smtplib.SMTP_SSL("smtp.gmail.com", 465)
 
@@ -49,4 +66,5 @@ while True:
         connection.sendmail(from_addr=my_email, to_addrs="rockstaralansaji@gmail.com",
                             msg="Subject: Look UP👆\n\n The international space station is above you!")
         connection.close()
+
 
