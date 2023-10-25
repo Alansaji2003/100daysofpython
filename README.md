@@ -71,3 +71,7 @@ Made International space station tracker app and kanye quotes app using apis of 
 Made Quiz App using Open Trivia API
 ### day 35
 Made Rain alert code with twilio API
+### day 36
+Stock Market Raise or Fall Alert using Twilio
+### day 37
+Habbit Tracker using Pixela API
