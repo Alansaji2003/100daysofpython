@@ -77,3 +77,9 @@ Stock Market Raise or Fall Alert using Twilio
 Habbit Tracker using Pixela API
 ### day 38
 Workout Tracker using Nutritionix's natural language processing API
+### day 39 and 40
+FlightFinder from tequila API
+### day 41
+Refreshing HTML
+### day 42
+Intermediate HTML
