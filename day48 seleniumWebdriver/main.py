@@ -8,7 +8,7 @@ chrome_options.add_experimental_option("detach", True)
 
 driver = webdriver.Chrome(options=chrome_options)
 driver.get("https://www.python.org/")
-#different ways to get elements
+# different ways to get elements
 
 # search = driver.find_element(By.NAME, value="query-builder-test")
 # print(search.get_attribute("class"))
@@ -20,15 +20,31 @@ driver.get("https://www.python.org/")
 # link = driver.find_element(By.CSS_SELECTOR, value=".position-relative a")
 # print(link.text)
 
-#using xpath
+# using xpath
 # price = driver.find_element(By.XPATH, value='//*[@id="firstHeading"]/span')
 # print(price.text)
 
 
-#python.org exercise
+# python.org exercise
 
-driver.find_elements(By.NAME,)
+event_dict = {}
+date_list = []
+event_list = []
+date_objs = driver.find_elements(By.CSS_SELECTOR, value=".event-widget time")
+for date in date_objs:
+    date_list.append(date.text)
+event_objs = driver.find_elements(By.CSS_SELECTOR, value=".event-widget div ul a")
+for event in event_objs:
+    event_list.append(event.text)
 
+
+for x in range(len(event_list)):
+    event_dict[x] = {
+        "time": date_list[x],
+        "name": event_list[x]
+    }
+
+print(event_dict)
 
 
 #to close browser
