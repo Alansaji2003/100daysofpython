@@ -13,8 +13,8 @@ ACCOUNT_PASSWORD = config.password
 def abort_application():
     # Click Close Button
     try:
-        close_button = driver.find_element(by=By.CLASS_NAME, value="artdeco-modal__dismiss")
-        close_button.click()
+        close_down_button = driver.find_element(by=By.CLASS_NAME, value="artdeco-modal__dismiss")
+        close_down_button.click()
 
         time.sleep(2)
         # Click Discard Button
