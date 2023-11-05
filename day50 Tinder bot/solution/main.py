@@ -107,24 +107,43 @@ for n in range(15):
     sleep(30)
     try:
         print("called")
-        wait = WebDriverWait(driver, 50)
-        like_button = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="s-1837973528"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[4]/div/div[4]/button'))).click()
-        # print(like_button.text)
-        # like_button.click()
+        wait = WebDriverWait(driver, 80)
+        # like_button = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="s-1837973528"]/div/div['
+        #                                                                '1]/div/main/div[1]/div/div/div[1]/div['
+        #                                                                '1]/div/div[3]/div/div[4]/button'))).click()
+        like_button = driver.find_element(By.XPATH, value='//*[@id="s-1837973528"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[3]/div/div[4]/button')
+        print(like_button.text)
+        like_button.click()
 
     except ElementClickInterceptedException:
         try:
+            print("inside ElementClickInterceptedException")
             match_popup = driver.find_element(By.CSS_SELECTOR, value=".itsAMatch a")
             match_popup.click()
         except NoSuchElementException:
+            print("inside NoSuchElementException")
             sleep(30)
-
+    except NoSuchElementException:
+        try:
+            like_button = driver.find_element(By.XPATH,
+                                              value='//*[@id="s-1837973528"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[4]/div/div[4]/button')
+            print(like_button.text)
+            like_button.click()
+        except:
+            sleep(30)
 driver.quit()
 
 
+# //*[@id="s-1837973528"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[3]/div/div[4]/button
+# //*[@id="s-1837973528"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[4]/div/div[4]/button
+# //*[@id="s-1837973528"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[4]/div/div[4]/button
+# //*[@id="s-1837973528"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[4]/div/div[4]/button
+# //*[@id="s-1837973528"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[4]/div/div[4]/button
+# //*[@id="s-1837973528"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[4]/div/div[4]/button
 
 
-
-
+# //*[@id="s-1837973528"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[3]/div/div[4]/button
+# //*[@id="s-1837973528"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[4]/div/div[4]/button
+# //*[@id="s-1837973528"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[4]/div/div[4]/button
 
 
