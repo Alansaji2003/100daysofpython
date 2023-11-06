@@ -83,3 +83,19 @@ FlightFinder from tequila API
 Refreshing HTML
 ### day 42
 Intermediate HTML
+### day 43
+CSS
+### day 44
+Intermediate CSS
+### day 45
+Getting started with beatiful soup webscraper and making 100 best movies project
+### day 46
+Spotify playlist maker using spotify api and beautiful soup
+### day 47
+Amazon price tracker app with beautiful soup
+### day 48
+getting started with selinium webdriver
+### day 49
+Automated Linkdn job application sender using Selinium webdriver
+### day 50
+Automated Tinder swiping bot with selinium webdriver
