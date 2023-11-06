@@ -5,16 +5,16 @@ from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.alert import Alert
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+
 from config import Config
 config = Config()
 
 FB_EMAIL = config.FACEBOOK_EMAIL
 FB_PASSWORD = config.FACEBOOK_PASSWORD
-PROXY = "IpOfTheProxy:PORT"
+
 
 chrome_options = webdriver.ChromeOptions()
-# chrome_options.add_argument("--proxy-server=%s" % PROXY)
+
 chrome_options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(options=chrome_options)
 
@@ -30,7 +30,7 @@ def login():
     login_button.click()
 login()
 print("login clicked")
-sleep(10)
+sleep(5)
 try:
     more_options = driver.find_element(By.XPATH, value='//*[@id="s728612692"]/main/div/div/div[1]/div/div/div[2]/div[2]/span/button')
     more_options.click()
@@ -84,7 +84,7 @@ password.send_keys(Keys.ENTER)
 driver.switch_to.window(base_window)
 print(driver.title)
 
-sleep(20)
+sleep(15)
 allow_location_button = driver.find_element(By.XPATH, value='//*[@id="s728612692"]/main/div/div/div/div[3]/button[1]')
 allow_location_button.click()
 try:
@@ -104,10 +104,10 @@ except:
 
 
 for n in range(15):
-    sleep(30)
+    sleep(10)
     try:
         print("called")
-        wait = WebDriverWait(driver, 80)
+
         # like_button = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="s-1837973528"]/div/div['
         #                                                                '1]/div/main/div[1]/div/div/div[1]/div['
         #                                                                '1]/div/div[3]/div/div[4]/button'))).click()
@@ -130,7 +130,7 @@ for n in range(15):
             print(like_button.text)
             like_button.click()
         except:
-            sleep(30)
+            sleep(10)
 driver.quit()
 
 
