@@ -103,7 +103,7 @@ except:
     pass
 
 
-for n in range(15):
+for n in range(85):
     sleep(10)
     try:
         print("called")
