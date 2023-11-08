@@ -1,4 +1,4 @@
-[![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=DenverCoder1)](https://git.io/streak-stats)
 # 100daysofpython #MAKING 100 PYTHON PROJECTS!!
 # check out my progress on twitter: https://twitter.com/AlanSaji2003
 ## LOG
