@@ -1,4 +1,4 @@
-<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=Alansaji2003"/></a>
+[![GitHub Streak](https://streak-stats.demolab.com?user=Alansaji2003)](https://git.io/streak-stats)
 # 100daysofpython #MAKING 100 PYTHON PROJECTS!!
 # check out my progress on twitter: https://twitter.com/AlanSaji2003
 ## LOG
