@@ -1,19 +1,20 @@
 import requests
 from bs4 import BeautifulSoup
-import lxml
+
 
 
 
 def service():
     url = input("Copy and paste the amazon product url you want to track.")
     print("Searching...")
+    #headers needed for amazon 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
         "Accept-Language": "en-US,en;q=0.9,ml;q=0.8",
         "Cookie": "PHPSESSID=b9ced46f1f89626c09777e26b0350b02; _ga=GA1.2.914121524.1698835683; _gid=GA1.2.553125194.1698835683; _ga_VL41109FEB=GS1.2.1698835683.1.0.1698835683.0.0.0"
     }
     response = requests.get(url, headers=headers)
-
+    #some websites only work in lxml parser
     soup = BeautifulSoup(response.text, "lxml")
 
     product_name = soup.find(name="span", id="productTitle").getText().strip()
