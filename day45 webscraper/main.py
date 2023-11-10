@@ -1,8 +1,10 @@
 from bs4 import BeautifulSoup
 import lxml
 import smtplib
+from config import Config
+config = Config()
 my_email = "mailalantest@gmail.com"
-password = "avtmhpjaphjwghiv"
+password = config.Password
 
 import requests
 response = requests.get("https://news.ycombinator.com/news")
