@@ -27,8 +27,9 @@ for a in soup.findAll('a', href=True, class_="StyledPropertyCardDataArea-anchor"
     url.append(a['href'])
 
 for x in range(len(address)):
-    time.sleep(3)
+    time.sleep(1)
     driver.get("https://forms.gle/ULaPqr69emSyJcTH9")
+    time.sleep(1)
     address_input = driver.find_element(By.XPATH, value='//*[@id="mG61Hd"]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[1]/input')
     address_input.send_keys(address[x])
     price_input = driver.find_element(By.XPATH, value='//*[@id="mG61Hd"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div/div[1]/input')
