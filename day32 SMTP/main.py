@@ -3,7 +3,7 @@ import datetime as dt
 import random
 
 my_email = "rockstaralansaji@gmail.com"
-password = "vdptszrrxygyidaa"
+password = "xxxxxx"
 file = open("quotes.txt")
 quotes_list = file.readlines()
 random_num = random.randint(0,len(quotes_list))
