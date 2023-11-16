@@ -8,7 +8,7 @@ from requests.structures import CaseInsensitiveDict
 
 
 my_email = "mailalantest@gmail.com"
-password = "xxxxxx"
+password = "avtmhpjaphjwghiv"
 MY_LAT = 12.9717248
 MY_LONG = 77.5704728
 
