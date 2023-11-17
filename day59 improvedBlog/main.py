@@ -3,7 +3,7 @@ from flask import render_template
 import requests
 import smtplib
 my_email = "mailalantest@gmail.com"
-password = "avtmhpjaphjwghiv"
+password = "xxxxx"
 
 blog_data = requests.get("https://api.npoint.io/bab9e35579ca37b414d2").json()
 
