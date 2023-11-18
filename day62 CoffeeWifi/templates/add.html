@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+<!--Don't forget your import here-->
+
+{% block title %}Add A New Cafe{% endblock %}
+
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
+
+      <h1>Add a new café into the database</h1>
+          {%if msg:%}
+          <h2>{{msg}}</h2>
+          {%endif%}
+      <!-- This is where your WTForm will go -->
+      {% from 'bootstrap5/form.html' import render_form %}
+      {{render_form(form,novalidate=True)}}
+	  <p class="space-above"><a href="{{url_for('cafes')}}">See all cafes</a></p>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
